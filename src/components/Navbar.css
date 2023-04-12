@@ -1,0 +1,29 @@
+/* #DEE1DD - CREAM
+#C4CDC1 - CREAM2
+#99AEAD - grey
+#6D9197 - BLUISH
+#658B6F - OLIVE
+#2F575D - dARK GREEN
+#28363D - DARK GREY */
+body{
+    /* background: #00090a; */
+    color: #eaf5e6;
+}
+
+.nav{
+    position: fixed;
+    background: linear-gradient(180deg,#00090a,#2F575D,#264447);
+    /* color: white; */
+    top: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    height: 10%;
+    font-size: 3rem;
+}
+
+.fade{
+    background-color: #00090a;
+}

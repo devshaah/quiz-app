@@ -1,0 +1,87 @@
+/* #DEE1DD - CREAM
+#C4CDC1 - CREAM2
+#99AEAD - grey
+#6D9197 - BLUISH
+#658B6F - OLIVE
+#2F575D - dARK GREEN
+#28363D - DARK GREY */
+body{
+    background: #28363D;
+    height: 100vh;
+}
+
+.box{
+    background: #C4CDC1;
+    color: black;
+    margin: 10rem auto;
+    width: 50vw;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1000px){
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        margin: 20px auto;
+    }
+}
+
+.card{
+    background-color: #6D9197;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 2%;
+    width: 10rem;
+    height: 7rem;
+    border-radius: 10px;
+}
+
+.card>select{
+    width: 80%;
+    outline: none;
+    border: none;
+    background-color: #28363D;
+    color: #DEE1DD;    
+    padding: 10px;
+    margin: auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.option{
+    background-color: #28363D;
+    color: #DEE1DD;
+    cursor: pointer;
+}
+
+.option:hover{
+    background-color:#28363D ;
+}
+
+.submit{
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    background-color: #28363D;
+    color: #DEE1DD;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 15px;
+    transition: ease-in 0.3 all;
+}
+.submit:hover{
+    background-color: #DEE1DD;
+    color: #28363D;  
+}
+
+
