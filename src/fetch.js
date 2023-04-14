@@ -1,32 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
 
-const Fetch = ( {amount , category, difficulty}) => {
+const Fetch = ( {amount , category, difficulty, setquestions, questions}) => {
     const count = 0;
-    const [data,setData] = useState([]);
+    // const [data,setData] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         async function fetchData() {
           const request = await axios.get(`https://opentdb.com/api.php?amount=${amount}&category=${category}&difficulty=${difficulty}`);
-          setData(request.data.results);
+          setquestions(request.data.results);
           return request;
         }
-        fetchData();
+         fetchData();
       }, []);
 
   return (
     <div>
-      {data.map(
-        (ques)=>
-        (<div>
-        <h1>Q.){ques.question}</h1>
-        <input type='radio' name='ans'/>{ques.incorrect_answers[0]}
-        <input type='radio' name='ans'/>{ques.correct_answer}
-        <input type='radio' name='ans'/>{ques.incorrect_answers[1]}
-        <input type='radio' name='ans'/>{ques.incorrect_answers[2]}
-        </div>) 
-        )}
+      <Navbar/>
+      <h1>Loading...</h1>
+      { navigate("/question")}
     </div>
   )
 }

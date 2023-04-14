@@ -1,0 +1,36 @@
+/* #DEE1DD - CREAM
+#C4CDC1 - CREAM2
+#99AEAD - grey
+#6D9197 - BLUISH
+#658B6F - OLIVE
+#2F575D - dARK GREEN
+#28363D - DARK GREY */
+
+.container1{
+    background:rgba(237, 240, 236, 0.5);
+    width: 70vw;
+    text-align: start;
+    margin-left: auto;
+    margin-right: auto ;
+    margin-top: 20vh;
+    padding: 30px 60px;
+    border-radius: 20px;
+
+}
+
+.question{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.cont{
+    margin-bottom:4vh ;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex{
+}
